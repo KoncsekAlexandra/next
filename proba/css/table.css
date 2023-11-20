@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+	min-width: 250px;
+	max-width: 100%;
+	table-layout: auto;
+	text-align: left;
+	width: 50%;
+}
+tr {
+	border-bottom: 1px solid;
+	margin: 2px;
+}
+tr.th {
+	background-color: #eee;
+}
+td {
+	max-width: 350px;
+}
+th.num, td.num {
+	text-align: right;
+}
+th.ctr, td.ctr {
+	text-align: center;
+}
+td.str {
+	text-align: left;
+}
+
+td img {height: 80px;}
+caption, tr, th, td {
+		padding: 10px;
+	}
+th a, td a {
+	padding: 0;
+}
+th a:hover, td a:hover {background-color: inherit;}
+@media screen and (max-width: 600px) {
+	caption, tr, tbody {
+		display: block;
+	}	
+	td {
+		padding: 4px 8px;
+		display: block;
+	}
+	th {
+		display: none;
+	}
+	th.num, td.num, th.ctr, td.ctr {
+		text-align: left;
+	}
+	tr.th {
+		display: none;
+	}
+}

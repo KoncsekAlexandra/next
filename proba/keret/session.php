@@ -1,0 +1,19 @@
+<?php
+    session_start();
+    //echo session_id();
+    if(isset($_SESSION['username']))
+    {
+        $belepve=true;
+        $username=$_SESSION['username'];
+    }
+    else
+    {
+        $belepve=false;
+    }
+    if(isset($_SESSION['ki']))
+    {
+        session_unset();
+        session_destroy();
+        $belepve=false;
+    }
+?>
